@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rock, Paper and Scissors Game</h1>
+    <hr><br>
+    <h1 style="text-align: center;">Choose any of them</h1>
+    <div class="container">
+        <button class="box" id="rock" value="Rock">
+            <h1>✊</h1>
+        </button>
+        <button class="box" id="paper" value="Paper">
+            <h1>✋</h1>
+        </button>
+        <button class="box" id="scissors" value="Scissors">
+            <h1>✌️</h1>
+        </button>
+    </div>
+    <h1 class="align" id="Computer_Choice"></h1>
+    <h1 class="align" id="display_result"></h1>
+    <h1 class="align" id="display_score"></h1>
+    <div class="container">
+        <button id="clearGame" onclick="ClearValues()">Restart</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
