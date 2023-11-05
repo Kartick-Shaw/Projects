@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khana Khazana</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Raleway:wght@100&family=Rubik&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Delicious+Handrawn&family=Raleway:wght@100&family=Rubik&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<script src="JS/menu_price.js"></script>
+<style>
+    body {
+        background: url(Img/bg_img.jpg);
+        margin: 0px;
+        padding: 0px;
+        background-size: cover;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="mid">
+            <img src="Img/logo.png" alt="">
+            <div>
+                Khana Khazana
+            </div>
+        </div>
+    </header>
+    <div class="hr_border"></div>
+    <div class="center">
+        <div class="container">
+            <h2>Menu</h2>
+            <div class="veg">
+                <h3>Veg Menu</h3>
+                <ul>
+                    <li><input type="checkbox" name="food" onclick="total(90)">
+                        <label for="food">Veg Biryani &nbsp 90/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(150)">
+                        <label for="food">Paneer Chilli &nbsp 150/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(200)">
+                        <label for="food">Paneer Barbeque &nbsp 200/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(50)">
+                        <label for="food">Aloo Biryani &nbsp 50/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(12)">
+                        <label for="food">Butter Naan &nbsp 12/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(45)">
+                        <label for="food">Veg Burger &nbsp 45/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(105)">
+                        <label for="food">Paneer Burger &nbsp 105/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(65)">
+                        <label for="food">Matar Palaw &nbsp 65/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(95)">
+                        <label for="food">Matar Paneer &nbsp 95/-</label></li>
+                </ul>
+            </div>
+            <div class="nonveg">
+                <h3>Non-Veg Menu</h3>
+                <ul>
+                    <li><input type="checkbox" name="food" onclick="total(190)">
+                        <label for="food">Chicken Biryani &nbsp 190/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(390)">
+                        <label for="food">Mutton Biryani &nbsp 390/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(170)">
+                        <label for="food">Chicken Chilli &nbsp 170/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(230)">
+                        <label for="food">Chicken Barbeque &nbsp 230/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(50)">
+                        <label for="food">Chicken Do-Payaza &nbsp 50/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(120)">
+                        <label for="food">Butter Chicken &nbsp 120/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(75)">
+                        <label for="food">Chicken Burger &nbsp 75/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(165)">
+                        <label for="food">Chicken Tandoori &nbsp 165/-</label></li>
+                    <li><input type="checkbox" name="food" onclick="total(95)">
+                        <label for="food">Chicken Kasa &nbsp 95/-</label></li>
+                </ul>
+            </div>
+            <div class="orderfinal">
+                <input type="button" value="Order Now" onclick="display()">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
