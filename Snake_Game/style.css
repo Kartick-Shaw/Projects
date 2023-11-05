@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url(/images/bg.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    width: 100px;
+    height: 50px;
+    /* margin: auto; */
+    /* padding: 20px; */
+    border: 2px solid black;
+    border-radius: 10%;
+    background-color: #4b4b4bad;
+    font-family: 'New Tegomin', serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: black;
+    text-align: center;
+}
+
+#board {
+    background: linear-gradient(rgb(141, 221, 141), rgb(211, 211, 135));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head,
+.snake {
+    border: .25vmin solid white;
+}
+
+.head {
+    background-color: red;
+    transform: scale(1.1);
+    border-radius: 40%;
+}
+
+.snake {
+    background-color: purple;
+    border-radius: 50%;
+}
+
+.food {
+    background: linear-gradient(red, rgb(218, 169, 169), yellow, orange);
+    border: .25vmin solid black;
+    border-radius: 50%;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#highScoreBox {
+    position: absolute;
+    top: 59px;
+    right: 97px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#easy, #medium, #hard{
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10%;
+    background-color: #4b4b4bad;
+    font-family: 'New Tegomin', serif;
+}
+
+#easy:hover, #medium:hover, #hard:hover{
+    background-color: #373737ad;
+} 
+
+#easy{
+    top: 10px;
+    left: 45px;
+}
+#medium{
+    top: 70px;
+    left: 45px;
+}
+#hard{
+    top: 130px;
+    left: 45px;
+}
